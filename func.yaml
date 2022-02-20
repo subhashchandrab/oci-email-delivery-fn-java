@@ -1,0 +1,7 @@
+schema_version: 20180708
+name: email-sender-function
+version: 1.0.5
+runtime: java
+build_image: fnproject/fn-java-fdk-build:jdk11-1.0.145
+run_image: fnproject/fn-java-fdk:jre11-1.0.145
+cmd: com.oci.fn.acme.email.EmailSender::handleRequest
